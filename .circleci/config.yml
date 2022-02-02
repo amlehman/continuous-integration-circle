@@ -13,6 +13,7 @@ jobs:
           name: build dependencies
           command: |
             gem update --system
+            gem uninstall bundler
             gem install bundler 
             bundle install
 
