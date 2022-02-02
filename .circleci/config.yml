@@ -40,7 +40,7 @@ jobs:
 
       - run:
           name: run html proofer
-          command: bundle exec htmlproofer ./_site --check-html --allow-hash-href --ignore-url "https://jekyllrb.com/"
+          command: bundle exec htmlproofer ./_site --check-html --allow-hash-href --url-ignore https://jekyllrb.com/
 
       - run:
           name: notify test is finished
